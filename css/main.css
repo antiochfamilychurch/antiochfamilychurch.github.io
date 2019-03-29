@@ -1,0 +1,12 @@
+/* ************************
+       Jumbotron
+***************************/
+    .display-4 {
+        text-align: center;
+    }
+    .lead {
+        text-align: center;
+    }
+    .jumbotron {
+        background-image: ("img/oceanView.jpg");
+    }
