@@ -1,12 +1,40 @@
 /* ************************
        Jumbotron
 ***************************/
-    .display-4 {
-        text-align: center;
-    }
-    .lead {
-        text-align: center;
-    }
-    .jumbotron {
-        background-image: ("img/oceanView.jpg");
-    }
+.display-4 {
+    text-align: center;
+}
+.lead {
+    text-align: center;
+}
+.jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1533200153465-cc3b3e9b66d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80");
+}
+
+/* ************************
+       Card Images
+***************************/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    vertical-align: baseline;
+}
+
+
+/* ************************
+       Footer
+***************************/
+footer {
+    font-size: .75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: #ccc;
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
