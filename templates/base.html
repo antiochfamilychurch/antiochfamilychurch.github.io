@@ -5,63 +5,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+
+      .customJumboBg{
+        background-size: cover;
+        background-position: center center;
+        margin: 0;
+        background-image: url("static/img/churchimgflat.png");
+        background-color: rgba(255, 255, 255, 0.4);
+        background-blend-mode: lighten;
+      }
+
+    </style>
     <title>Antioch Family Church</title>
 </head>
 <body>
+<div>
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="/home">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Who we are<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="/whoweare">Who we are</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="/services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="/contact">Contact Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Visit Us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="/visitus">Visit Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Español</a>
+            <a class="nav-link" href="/espanol">Español</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
     <!--/NAVBAR-->
     <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Antioch Family Church</h1>
-        <p class="lead">Love God, Love People, Change the World</p>
+    <div class="jumbotron jumbotron-fluid customJumboBg">
+      <div class="container text-sm-center pt-1">
+        <h1 class="display-2">Antioch Family Church</h1>
+        <p class="display-4 text-center my-1">Of The Nazarene</p>
+        <p class="lead display-5 text-center pt-5 my-1">Love God, Love People, Change the World</p>
       </div>
     </div>
     <!--/Jumbotron-->
-
-    {% block content %} content here {% endblock %}
+</div>
+{% block content %}
+{% endblock %}
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -69,8 +72,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <footer>
-        <a href="http://twitter.com/nickrp" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="https://www.facebook.com/afcnaz" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <!-- <a href="#" target="_blank"><img src="static/img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> -->
+        <a href="https://www.facebook.com/afcnaz" target="_blank"><img src="static/img/fbnew.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2019 Antioch Family Church</p>
     </footer>
 

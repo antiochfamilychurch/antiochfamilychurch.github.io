@@ -5,59 +5,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+
+      .customJumboBg{
+        background-size: cover;
+        background-position: center center;
+        margin: 0;
+        background-image: url("static/img/churchimgflat.png");
+        background-color: rgba(255, 255, 255, 0.4);
+        background-blend-mode: lighten;
+      }
+
+    </style>
     <title>Antioch Family Church</title>
 </head>
 <body>
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="/inicio">Inicio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="who_we_are.html">Who we are<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="/quienes">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="/servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="/contactenos">Contactenos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="visitus.html">Visit Us</a>
+            <a class="nav-link" href="/visitenos">Visitenos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="espanol.html">Español</a>
+            <a class="nav-link" href="/">English</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
     <!--/NAVBAR-->
     <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid customJumboBg">
       <div class="container">
         <h1 class="display-4">Antioch Family Church</h1>
-        <p class="lead">Amor a Dios, Amor a la Gente, Cambiamos el Mundo</p>
+        <p class="display-4 text-center my-1">Of The Nazarene</p>
+        <p class="lead display-5 text-center pt-5 my-1">Amor a Dios, Amor a la Gente, Cambiamos el Mundo</p>
       </div>
     </div>
     <!--/Jumbotron-->
-    <h1>Todos Creemos en Algo</h1>
 
-    <p>En Antioch Family Curch, abrazamos a todos con gracia, sabiendo que todos estamos en nuestro propio viaje de descubriendo a Dios. Tu viaje es problamente differente al mio, y en orden para trabajar juntos por el bien comun, practicamos tres sencillo principios en nuestro creencias.</p>
-
-    <h3>En creencias essenciales - tenemos UNIDAD</h3>
-    <p>La Iglesia del Nazareno solo tiene 16 Articulos de Fe. En estos esenciales nos vamos a comprometer. Estas declaraciones de fe son quien somos. "Hay un solo cuerpo y un solo Espíritu, así como también fueron llamados a una sola esperanza; un solo Señor, una sola fe, un solo bautismo; un solo Dios y Padre de todos, que está sobre todos y por medio de todos y en todos."  Efesios 4:4-6 (NIV)</p>
+    {% block content %}
+    {% endblock %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -66,8 +72,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <footer>
-        <a href="http://twitter.com/nickrp" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="https://www.facebook.com/afcnaz" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <!-- <a href="http://twitter.com/nickrp" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a> -->
+        <a href="https://www.facebook.com/afcnaz" target="_blank"><img src="static/img/fbnew.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2019 Antioch Family Church</p>
     </footer>
 
